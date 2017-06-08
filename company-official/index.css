@@ -1,0 +1,617 @@
+/*全局reset*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	font-size: 62.5%;
+	font-family: "Microsoft Yahei";	
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+a, button, input {
+	transition: all 0.2s;
+}
+ul {
+	list-style-type: none;
+}
+
+/*页头与主体包裹*/
+.wrapper {
+	width: 90%;
+	min-width: 100rem;
+	max-width: 150rem;
+	margin: 0 auto;
+}
+
+/*页头*/
+#header {
+	width: 100%;
+	height: 5.6rem;
+}
+/*左侧logo*/
+.logo {
+	display: inline-block;
+	height: 5.6rem;
+	width: 10rem;
+	margin-left: 3%;
+	margin-right: 1rem;	
+	background: url("images/logo.png") no-repeat left center;
+}
+.website-name {
+	font-size: 2rem;
+	text-indent: 4rem;
+	font-weight: bold;
+	line-height: 2.8;
+}
+/*右侧导航*/
+.navi {
+	float: right;
+	margin-right: 3%;
+	height: 100%;
+	font-size: 0;
+}
+.navi>li {
+	display: inline-block;
+}
+.navi a {	
+	display: block;
+	box-sizing: border-box;
+	height: 5.6rem;
+	padding: 0 1.6rem;
+	font-size: 1.6rem;
+	line-height: 3.5;
+	text-decoration: none;
+	color: #666;
+	transition: color 0.2s;
+}
+.navi a:hover {
+	color: #e74f4d;
+	border-bottom: 2px solid #e74f4d;
+}
+.navi li:first-child a { 
+	color: #e74f4d;
+	border-bottom: 2px solid #e74f4d;
+}
+
+/*登录*/
+.navi li:last-child a {
+	margin-left: 1rem;
+	color: #e74f4d;
+	background: url(images/login.png) no-repeat left center;
+	background-origin: border-box;
+}
+
+/*主体部分*/
+#mainbody {
+	width: 100%;
+}
+
+/*Part1：横幅广告*/
+.banner {
+	width: 100%;
+	height: 50rem;
+	box-sizing: border-box;
+	padding-left: 12rem;
+	padding-top: 12rem;
+	background: url(images/banner.jpg) center;
+	background-size: cover;
+}
+.banner-title {
+	font-size: 6rem;
+	color: #fff;
+}
+.banner-description {
+	margin-top: 1rem;
+	font-size: 2rem;
+	line-height: 1.6;
+	color: #fff;
+}
+.banner-btn {
+	display: block;
+	width: 30rem;
+	margin-top: 6rem;
+	font-size: 2.5rem;
+	line-height: 2;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 0.1rem;
+	color: #fff;
+	background: #e74f4d;
+}
+.banner-btn:hover {
+	opacity: 0.9;
+}
+
+/*Part2：四栏宣传语*/
+.slogan>li {
+	position: relative;
+	width: 25%;
+	height: 25rem;
+	float: left;
+	text-align: center;
+}
+.slogan img {
+	margin: 4.5rem 0;
+}
+.slogan p {
+	width: 60%;
+	margin: 0 auto;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	font-weight: bold;
+	color: #999;
+}
+.slogan li:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -0.1rem;
+	top: 13rem;
+	height: 5rem;
+	width: 0.1rem;
+	background: #999;	
+}
+.slogan li:last-child:after {
+	display: none;
+}
+
+/*Part3：横幅引问*/
+.question {
+	width: 100%;
+	height: 36rem;
+	background: #ececec;
+	text-align: center;
+}
+.question-img {
+	margin-top: 9rem;
+	width: 9.1rem;
+	height: 9.2rem;
+	max-width: 91px;
+	max-height: 92px;
+}
+.question-content {
+	font-size: 5rem;
+	line-height: 2.2;
+	color: #999;
+}
+
+/*Part4：城市信息查询*/
+.city-query {
+	width: 100%;
+	height: 29em;
+	padding-top: 5rem;
+	color: #fff;
+	text-align: center;
+	background: url("images/city_query_back.jpg") center;
+	background-size: cover;
+}
+.city-query-title {
+	font-size: 2rem;
+}
+.city-query-title:after {
+	content: "";
+	display: block;
+	margin: 1rem auto;
+	height: 0.2rem;
+	width: 3rem;
+	background: #fff;
+}
+.city-query-description {
+	margin-top:0.5rem;
+	margin-bottom: 5rem;
+	font-size: 1.2rem;
+}
+.city-query-box {
+	width: 20%;
+	height: 3.5rem;
+	margin: 0 1rem;	
+}
+.city-query-select {
+	text-indent: 1rem;
+	color: #999;
+	border: 0;
+	font-size: 1.4rem;
+}
+.city-query-btn {
+	font-size: 1.6rem;
+	color: #fff;
+	letter-spacing: 2rem;
+	background: #bf4e48;
+	border: 0;
+}
+.city-query-btn:hover {
+	opacity: 0.9;
+}
+
+/*Part5：活动*/
+.activity {
+	width: 90%;
+	height: 50rem;
+	padding: 10rem 5% 0;
+	background: #eee;
+}
+.activity-list {
+	float: left;
+	width: 25%;
+	font-size: 1.2rem;
+	color: #999;
+	line-height: 1.5;
+	text-align: center;
+}
+.activity-list img {
+	width: 20.3rem;
+	height: 31.2rem;
+	max-width: 203px;
+	max-height: 312px;
+	padding: 1.2rem 0.7rem;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+.activity-list h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #666;
+	line-height: 2.2;
+}
+.activity-list:nth-child(2) h2 {
+	margin-left: 2.5rem;
+	font-size: 2.3rem;
+	font-weight: normal;
+	line-height: 1;
+	letter-spacing: 2.5rem;
+}
+.activity-list:nth-child(2) p {
+	line-height: 2.5;
+}
+
+/*Part6：北京活动*/
+.case-bj {
+	height: 56.6rem;
+}
+.case-bj-left {
+	float: left;
+	width: 66.4%;
+	height: 43.6rem;
+	padding-top: 13rem;
+	font-size: 2.2rem;
+	line-height: 2;
+	text-align: center;
+	color: #fff;
+	background: url(images/beijing.jpg) no-repeat center;
+	background-size: cover;
+
+}
+.case-bj-left h3 {
+	font-size: 5rem;
+	line-height: 1;
+}
+.case-bj-left h2 {
+	font-size: 16rem;
+	line-height: 1;
+}
+.case-bj-right {
+	float: left;
+	position: relative;
+	width: 33.6%;
+	height: 40.6rem;
+	padding-top: 16rem;
+	text-align: center;
+}
+.case-bj-right h3 {
+	font-size: 2rem;
+}
+.text-highlight {
+	color: #f00;
+}
+.case-bj-description {
+	width: 80%;
+	margin: 2rem auto;
+	font-size: 1.2rem;
+	line-height: 2;
+	color: #666;
+	text-align: left;
+}
+.case-bj-more {
+	display: block;
+	width: 10rem;
+	height: 3rem;
+	margin: 4rem auto 2rem;
+	font-size: 1.2rem;
+	line-height: 2.5;
+	color: #e74f4d;
+	text-decoration: none;
+	border: 1px solid #e74f4d;
+}
+.case-bj-more:hover {
+	background: #e74f4d;
+	color: #fff;
+}
+.case-bj-dot-list {
+	width: 6rem;
+	margin: 0 auto;
+}
+.case-bj-dot-list li {
+	float: left;
+	margin: 0.5rem;
+	width: 0.8rem;
+	height: 0.8rem;
+	border: 0.1rem solid #999;
+	border-radius: 0.5rem;
+}
+.case-bj-dot-list li:first-child {
+	background: #999;
+}
+.case-bj-right:before{
+	content: "";
+	display: block;
+	position: absolute;
+	left: -3.9rem;
+	top: 26.8rem;
+	border: 1.5rem solid transparent;
+	border-right: 2.4rem solid #fff;
+}
+
+/*Part7：更多活动*/
+.more-case {
+	height: 52rem;
+}
+.more-case-box {
+	float: left;
+	width: 33.2%;
+	padding-top: 17rem;
+	height: 35rem;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+.more-case-left {
+	color: #fff;
+	background: #e8504f;
+}
+.more-case-title:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 3rem;
+	margin: 2.5rem auto;
+	background: #ccc;
+}
+.more-case-left h3:after {
+	background: #fff;
+}
+.more-case-btn {
+	display: block;
+	margin: 0 auto;
+	height: 4rem;
+	width: 16.5rem;
+	font-size: 2rem;
+	line-height: 2;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #fff;
+}
+.more-case-btn:hover {
+	background: #fff;
+	color: #e74f4d;
+}
+.more-case-btn-dark {
+	color: #e74f4d;
+	border-color: #e74f4d;
+}
+.more-case-btn-dark:hover {
+	color: #fff;
+	background: #e74f4d;
+}
+.more-case-right {
+	float: left;
+	position: relative;
+	width: 33.6%;
+	height: 52em;
+	background: url(images/more.jpg) no-repeat center;
+	background-size: cover;
+}
+.more-case-right:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 24.5rem;
+	border: 1.5rem solid transparent;
+	border-left: 2.4rem solid #fff;
+}
+
+/*Part8：志愿者条款*/	
+.volunteer {
+	padding-top: 12rem;
+	height: 63em;
+}
+.vol-title-box {
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+.vol-title {
+	font-size: 2rem;
+}
+.vol-title:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 3rem;
+	margin: 1rem auto;
+	background: #e74f4d;
+}
+.vol-description {
+	margin-bottom: 10rem;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	color: #999;
+}
+.vol-bottom-wrapper {
+	width: 85%;
+	margin: 0 auto;
+}
+.vol-rules {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+.vol-rules li {
+	margin-bottom: 2rem;
+}
+.vol-rules h3 {
+	font-size: 1.4rem;
+	line-height: 3.8;
+}
+.vol-rules p {
+	height: 3.6rem;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	color: #999;
+	overflow: hidden;
+}
+.vol-rules a {
+	float: right;
+	display: block;
+	height: 1.8rem;
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 1.8rem;
+	color: #666;
+}
+.vol-rules a:hover {
+	color: #e74f4d;
+	font-weight: bold;
+}
+
+/*Part8：志愿者报名信息填写*/
+.vol-info-form {
+	float: right;
+	width: 65%;
+	text-align: justify;
+}
+.vol-info-form input, textarea {
+	margin-bottom: 1.5rem;	
+	font-size: 1.2rem;
+	color: #666;
+	text-indent: 2rem;
+	background: #eee;
+	border: 0;
+	transition: all 0.2s;
+}
+.vol-info-form input:focus, textarea:focus {
+	background: #fff;
+}
+.vol-info-form input {
+	width: 48%;
+	height: 4rem;		
+}
+.vol-info-form textarea {
+	width: 100%;
+	height: 11rem;
+	padding-top: 1rem;
+	font: 1.2rem "Microsoft Yahei";
+}
+.vol-info-form button {
+	height: 4rem;
+	width: 100%;
+	margin: 0;
+	font-size: 1.4rem;
+	text-align: center;
+	background: #eee;
+	border: 0;
+}
+.vol-info-form button:hover {
+	background: #e74f4d;
+	color: #fff;
+}
+
+/*联系我们*/
+.contact {
+	width: 100%;
+	min-width: 100rem;
+	height: 27rem;
+	padding-top: 9rem;
+	background: #32353e;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	text-align: center;
+	color: #fff;
+}
+.contact-title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.email-form {
+	height: 4rem;
+	width: 51rem;
+	margin: 3rem auto;
+	font-size: 0;
+}
+.email-input {
+	width: 83%;
+	height: 4rem;
+	border: 0;
+	margin: 0;
+	text-indent: 2rem;
+	color: #ccc;
+	font-size: 1.4rem;
+	line-height: 4rem;
+}
+.email-btn {
+	width: 15%;
+	height: 4rem;
+	border: 0;
+	font-size: 1.6rem;
+	line-height: 4rem;
+	letter-spacing: 1rem;
+	text-indent: 1rem;
+	color: #fff;
+	background: #717179;
+}
+.email-btn:hover {
+	background: #e74f4d;
+}
+
+.contact-icons li {
+	display: inline-block;
+}
+.contact-icons a {
+	display: block;
+	padding: 1.5rem;
+}
+.contact-icons a:hover {
+	opacity: 0.8;
+}
+
+/*页尾*/
+#footer {
+	width: 100%;
+	height: 6rem;
+	background: #2f2f38;
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 6rem;
+}
+.footer-left {
+ 	padding-left: 5%;
+}
+.footer-right {
+	height: 6rem;
+	color: #fff;
+	float: right;
+	text-decoration: none;
+	padding: 0 3%;
+}
+.footer-right:hover {
+	font-weight: bold;
+}
