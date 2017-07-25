@@ -1,40 +1,11 @@
 /*
 * @Author: midoDaddy
 * @Date:   2017-07-20 16:54:44
-* @Last Modified by:   Administrator
-* @Last Modified time: 2017-07-22 23:58:12
+* @Last Modified by:   midoDaddy
+* @Last Modified time: 2017-07-24 10:35:07
 */
 
-/* 全局样式 */
-body {
-    font-family: "Microsoft Yahei";
-    min-width: 1000px;
-    background: #fff;
-}
-.w {
-    width: 1000px;
-    margin: 0 auto;
-}
-label {
-    cursor: pointer;
-}
-.btn {
-    color: #fff;
-    text-align: center;
-    background: #ff8d16;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.btn:hover {
-	background: #34b3e0;
-}
-.link:hover {
-	color: #34b3e0;
-}
-.link:hover i {
-	color: #34b3e0;
-}
+
 
 
 /* 头部顶栏 */
